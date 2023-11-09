@@ -6276,7 +6276,7 @@ fieldset:disabled .btn {
 
   .modal-lg,
   .modal-xl {
-    --bs-modal-width: 800px;
+    --bs-modal-width: 900px;
   }
 }
 
@@ -13716,6 +13716,10 @@ fieldset:disabled .btn {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.415);
   }
+}
+
+.font-noto {
+  font-family: "Noto Serif";
 }
 
 /*# sourceMappingURL=style.css.map */

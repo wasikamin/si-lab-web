@@ -13737,4 +13737,20 @@ fieldset:disabled .btn {
   background-color: #CD7B2E;
 }
 
+.form-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 767.98px) {
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .form-container {
+    width: 30%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -8510,6 +8510,10 @@ fieldset:disabled .btn {
   width: 25% !important;
 }
 
+.w-35 {
+  width: 35% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -13727,6 +13731,10 @@ fieldset:disabled .btn {
 .bg-pink {
   --bs-bg-opacity: 1;
   background-color: #d866b2;
+}
+
+.btn-login {
+  background-color: #CD7B2E;
 }
 
 /*# sourceMappingURL=style.css.map */

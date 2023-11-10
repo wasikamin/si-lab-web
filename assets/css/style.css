@@ -13765,4 +13765,22 @@ body {
   color: red;
 }
 
+@keyframes appear-slowly {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+#btn-back-to-top {
+  animation: appear-slowly 2s;
+}
+
+
 /*# sourceMappingURL=style.css.map */

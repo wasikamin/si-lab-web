@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+.card {
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    width: 30rem;
+}
+
+body {
+    font-family: 'JetBrains Mono';
+}
+
+.btn-transaction {
+    background: #2d3047;
+    color: white;
+}
+
+.btn-transaction:hover {
+    background: #171824;
+    color: white;
+}

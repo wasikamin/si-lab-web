@@ -68,10 +68,10 @@ const addToBalance = (obj) => {
 const addToHistory = (obj, id) => {
     const history = document.getElementById("history-item")
     let newItem = document.createElement("li")
-    newItem.className = "d-flex justify-content-between w-100"
-    newItem.innerHTML = ` <p>${obj.transaction}</p>
+    newItem.className = `d-flex align-items-center justify-content-between w-100 border-end border-4 ${obj.amount > 0 ? "border-success" : "border-danger"} py-2 pe-1`
+    newItem.innerHTML = ` <div>${obj.transaction}</div>
     <div class="d-flex gap-2">
-        <p>${obj.amount}</p>
+        <div>${obj.amount}</div>
         <button class="btn-delete" onclick="deleteRow(${id})"><i class="fa fa-trash text-danger"></i></button>
     </div>`
     history.append(newItem)

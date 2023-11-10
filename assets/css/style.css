@@ -13736,6 +13736,10 @@ fieldset:disabled .btn {
   background-color: #CD7B2E;
 }
 
+.btn-login:hover {
+  background-color: #593614;
+}
+
 .form-container {
   width: 100%;
 }

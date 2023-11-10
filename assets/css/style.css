@@ -13779,6 +13779,7 @@ body {
 
 
 #btn-back-to-top {
+  display: none;
   animation: appear-slowly 2s;
 }
 

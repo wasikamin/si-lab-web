@@ -10,6 +10,13 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SiLabs Login</title>
+    <script type="module">
+        import { login } from "./assets/js/loginController.js"
+        addEventListener("submit", (event) => {
+            event.preventDefault()
+            login(event)
+        });
+    </script>
 </head>
 
 <body>
@@ -34,12 +41,12 @@
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="mb-5">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-login text-white w-100">Login</button>

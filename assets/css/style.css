@@ -13756,4 +13756,9 @@ body {
   font-family: 'Open Sans';
 }
 
+.contact__form .required::after {
+  content: "*";
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

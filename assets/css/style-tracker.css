@@ -42,3 +42,25 @@ body {
     margin: 0;
     height: fit-content;
 }
+
+@keyframes slideaway {
+    from {
+        display: block;
+        transform: translateX(-5px);
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.delete {
+    animation: slideaway 200ms;
+    display: none;
+}
+
+.li-history:hover>div>.delete {
+    display: block;
+    margin-left: 5px;
+}

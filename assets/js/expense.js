@@ -46,7 +46,7 @@ const deleteTableHistory = () => {
 }
 
 const addToCard = (obj, id) => {
-    if (parseInt(obj.amount) > 0) {
+    if (parseInt(obj.amount) >= 0) {
         addToIncome(obj)
     }
     else if (parseInt(obj.amount) < 0) {
@@ -68,12 +68,11 @@ const addToBalance = (obj) => {
 const addToHistory = (obj, id) => {
     const history = document.getElementById("history-item")
     let newItem = document.createElement("li")
-    newItem.className = `d-flex align-items-center justify-content-between w-100 border-end border-4 ${obj.amount > 0 ? "border-success" : "border-danger"} py-2 pe-1`
-    newItem.innerHTML = ` <div>${obj.transaction}</div>
-    <div class="d-flex gap-2">
-        <div>${obj.amount}</div>
-        <button class="btn-delete" onclick="deleteRow(${id})"><i class="fa fa-trash text-danger"></i></button>
-    </div>`
+    newItem.className = `d-flex align-items-center justify-content-between w-100 border-end border-4 ${obj.amount >= 0 ? "border-success" : "border-danger"} py-2 pe-1 li-history`
+    newItem.innerHTML = ` <div class="d-flex gap-2">
+    <button class="btn-delete delete" onclick="deleteRow(${id})"><i class="fa fa-trash text-danger"></i></button>
+    <div>${obj.transaction}</div>
+    </div>  <div>${obj.amount}</div>`
     history.append(newItem)
 }
 

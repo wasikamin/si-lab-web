@@ -9,5 +9,5 @@ export const login = (e) => {
         obj[inpName] = formElements.elements[inpName].value
     }
     setLocalStorage("user", JSON.stringify(obj))
-    window.history.back()
+    window.location.replace("index.html")
 }

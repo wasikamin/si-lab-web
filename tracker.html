@@ -10,12 +10,12 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style-tracker.css">
-    <title>SiLabs Login</title>
+    <title>Expense Tracker</title>
 </head>
 
 <body>
     <main>
-        <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 bg-body-tertiary">
+        <div class="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-body-tertiary">
             <a href="index.html" class="fs-3 mb-3">Home</a>
             <h1 class="fs-4 mb-5">Expense Tracker</h1>
             <div class="card shadow-lg">
@@ -54,12 +54,12 @@
                             <div class="mb-3">
                                 <label for="transaction" class="form-label">Transaction Detail</label>
                                 <input type="text" class="form-control" name="transaction" id="transaction"
-                                    aria-describedby="transaction">
+                                    aria-describedby="transaction" required>
                             </div>
                             <div class="mb-5">
                                 <label for="amount" class="form-label">Amount (negative - expense,
                                     positive - income)</label>
-                                <input type="number" name="amount" class="form-control" id="amount">
+                                <input type="number" name="amount" class="form-control" id="amount" required>
                             </div>
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-transaction rounded-3 text-white w-100 py-2">add
